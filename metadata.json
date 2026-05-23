@@ -1,0 +1,6 @@
+{
+  "name": "Tequila Carácter de Campo",
+  "description": "Sitio web de Tequila Carácter de Campo ¨Don Martin¨. Una trilogía premium de agave azul con causa social en Colombia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
