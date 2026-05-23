@@ -7,6 +7,7 @@ import logoImg from '../assets/images/logo.png';
 import blancoImg from '../assets/images/blanco.png';
 import anejoImg from '../assets/images/anejo_reposado.png';
 import cristalinoImg from '../assets/images/anejo_cristalino.png';
+import agaveImg from '../assets/images/jalisco_agave_fields_1779559317323.png';
 
 const HERO_BOTTLE_IMAGES: Record<string, string> = {
   'blanco': blancoImg,
@@ -141,7 +142,7 @@ export default function Hero() {
         >
           {/* Jalisco Agave Fields */}
           <img
-            src="/src/assets/images/jalisco_agave_fields_1779559317323.png"
+            src={agaveImg}
             alt="Campos de Agave Don Martin"
             className="absolute inset-0 w-full h-full object-cover opacity-45 mix-blend-luminosity scale-105 filter saturate-40 blur-[0.2px] pointer-events-none select-none"
           />
