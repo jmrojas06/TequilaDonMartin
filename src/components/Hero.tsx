@@ -41,11 +41,11 @@ function HeroBottle({ id, colorHex }: { id: string; colorHex: string }) {
       style={{ perspective: 1000 }}
     >
       {/* Fake ground shadow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-10 rounded-full bg-neutral-900/30 blur-xl pointer-events-none transition-all duration-500 group-hover:opacity-60 group-hover:scale-110" />
+      <div className="absolute bottom-[146px] left-1/2 -translate-x-1/2 w-3/4 h-10 rounded-full bg-neutral-900/30 blur-xl pointer-events-none transition-all duration-500 group-hover:opacity-60 group-hover:scale-110" />
 
       {/* Color ambient glow */}
       <div
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 w-1/2 h-10 rounded-full opacity-20 blur-2xl pointer-events-none"
+        className="absolute bottom-[170px] left-1/2 -translate-x-1/2 w-1/2 h-10 rounded-full opacity-20 blur-2xl pointer-events-none"
         style={{ backgroundColor: colorHex }}
       />
 
@@ -93,7 +93,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex flex-col justify-between [overflow-x:clip] bg-bone pt-24 pb-12 px-4 sm:px-6 lg:px-8"
+      className="relative min-h-screen flex flex-col [overflow-x:clip] bg-bone pt-24 pb-12 px-4 sm:px-6 lg:px-8"
     >
       {/* Subtle background lines */}
       <div className="absolute inset-y-0 left-1/10 w-px bg-brand-gold/[0.04] pointer-events-none hidden lg:block" />
@@ -133,7 +133,7 @@ export default function Hero() {
 
       {/* 2. CORE COMPOSITION: photo band cuts through the MIDDLE of the Blanco bottle */}
       {/* Band height 68% of composition — its left edge lands right at mid-bottle on the Blanco (left col) */}
-      <div className="relative w-full h-[520px] sm:h-[660px] md:h-[840px] my-3 flex items-end justify-center overflow-visible">
+      <div className="relative w-full h-[520px] sm:h-[660px] md:h-[840px] flex items-end justify-center overflow-visible">
 
         {/* Diagonal photo band — tall, pierced through by the bottles */}
         <div
@@ -174,7 +174,7 @@ export default function Hero() {
       </div>
 
       {/* 3. UNDER BOTTLE SUMMARY CARDS: Sensory descriptors and smooth scroll link */}
-      <div className="relative z-10 max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch mb-8 mt-2">
+      <div className="relative z-10 max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch -mt-[110px] mb-8">
         {bottleSpecs.map((spec) => (
           <div 
             key={spec.id}
