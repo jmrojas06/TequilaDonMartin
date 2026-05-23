@@ -41,11 +41,11 @@ function HeroBottle({ id, colorHex }: { id: string; colorHex: string }) {
       style={{ perspective: 1000 }}
     >
       {/* Fake ground shadow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-10 rounded-full bg-neutral-900/30 blur-xl pointer-events-none transition-all duration-500 group-hover:opacity-60 group-hover:scale-110" />
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-10 rounded-full bg-neutral-900/30 blur-xl pointer-events-none transition-all duration-500 group-hover:opacity-60 group-hover:scale-110" />
 
       {/* Color ambient glow */}
       <div
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 w-1/2 h-10 rounded-full opacity-20 blur-2xl pointer-events-none"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 w-1/2 h-10 rounded-full opacity-20 blur-2xl pointer-events-none"
         style={{ backgroundColor: colorHex }}
       />
 
@@ -93,7 +93,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex flex-col justify-between [overflow-x:clip] bg-bone pt-24 pb-12 px-4 sm:px-6 lg:px-8"
+      className="relative min-h-screen flex flex-col [overflow-x:clip] bg-bone pt-24 pb-12 px-4 sm:px-6 lg:px-8"
     >
       {/* Subtle background lines */}
       <div className="absolute inset-y-0 left-1/10 w-px bg-brand-gold/[0.04] pointer-events-none hidden lg:block" />
